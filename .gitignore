@@ -1,0 +1,5 @@
+*.zip
+dom-inspection.json
+*.log
+.DS_Store
+Thumbs.db
