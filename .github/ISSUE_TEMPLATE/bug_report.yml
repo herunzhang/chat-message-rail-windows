@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible compatibility or behavior issue
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach chat exports, DOM inspection reports, account identifiers, tokens, or screenshots containing private conversations.
+  - type: input
+    id: app-version
+    attributes:
+      label: Desktop app version
+      description: Copy the exact Windows desktop application version.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Page type
+      options:
+        - Ordinary Chat
+        - Work/Codex thread
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use placeholder text instead of real conversation content.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
